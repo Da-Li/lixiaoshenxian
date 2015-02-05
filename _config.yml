@@ -1,4 +1,4 @@
 encoding: utf-8
-baseurl : lixiaoshenaxian
+baseurl : lixiaoshenaxian/
 # permalink : /:categories/:title.html
 markdown: kramdown
