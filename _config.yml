@@ -1,4 +1,4 @@
 encoding: utf-8
 baseurl : 
-# permalink : /:categories/:title.html
+permalink : /:categories/:title.html
 markdown: kramdown
