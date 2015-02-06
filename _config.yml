@@ -1,4 +1,4 @@
 encoding: utf-8
-baseurl : http://da-li.github.io/lixiaoshenxian
+baseurl : http://www.lixiaoshenxian.com
 permalink : /:categories/:title.html
 markdown: kramdown
