@@ -3,6 +3,7 @@ layout: detail_tmp
 title:各种Hello Word
 intor: 写了前一篇HelloWord,总结下各种Hello Word
 ---
+
 #各种helloWorld#
 
 &ensp;**Hello World** 是程序员最熟悉的了。作为所有语言的一个Test程序，当然在程序员心中非常重要的位置。
