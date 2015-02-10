@@ -1,7 +1,6 @@
 ---
 layout: detail_tmp
 title: 各种Hello Word
-description: HTML5 Prefetch：prefetch 即预加载，在用户需要前我们就将所需的资源加载完毕。
 intor: 写了前一篇HelloWord,总结下各种Hello Word
 ---
 
