@@ -19,7 +19,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1423079819,byc:0,owlid
 //]]>
 </script> 
   <link rel="shortcut icon" href="http://designarethemes.net/themes/html/yunik/images/favicon.png" /> 
-  <title>第一个Github 博客</title> 
+  <title>marckdown 标签语法</title> 
   <link href="http://designarethemes.net/themes/html/yunik/css/bootstrap.css" rel="stylesheet" /> 
   <link href="/assets//yunik.css" rel="stylesheet" type="text/css" media="screen" /> 
   <link href="/assets//icons-font.css" rel="stylesheet" type="text/css" media="screen" /> 
@@ -71,25 +71,182 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1423079819,byc:0,owlid
       <div class="space"></div> 
       <div class="space"></div> --> 
          <div class="post-summary page-detail"> 
-          <h2>Welcome to MarkdownPad 2</h2>
-<p><strong>MarkdownPad</strong> is a full-featured Markdown editor for Windows.</p>
-<h3>Built exclusively for Markdown</h3>
-<p>Enjoy first-class Markdown support with easy access to  Markdown syntax and convenient keyboard shortcuts.</p>
-<p>Give them a try:</p>
-<ul>
-<li><strong>Bold</strong> (<code>Ctrl+B</code>) and <em>Italic</em> (<code>Ctrl+I</code>)</li>
-<li>Quotes (<code>Ctrl+Q</code>)</li>
-<li>Code blocks (<code>Ctrl+K</code>)</li>
-<li>Headings 1, 2, 3 (<code>Ctrl+1</code>, <code>Ctrl+2</code>, <code>Ctrl+3</code>)</li>
-<li>Lists (<code>Ctrl+U</code> and <code>Ctrl+Shift+O</code>)</li>
-</ul>
-<h3>See your changes instantly with LivePreview</h3>
-<p>Don't guess if your <a href="http://markdownpad.com">hyperlink syntax</a> is correct; LivePreview will show you exactly what your document looks like every time you press a key.</p>
-<h3>Make it your own</h3>
-<p>Fonts, color schemes, layouts and stylesheets are all 100% customizable so you can turn MarkdownPad into your perfect editor.</p>
-<h3>A robust editor for advanced Markdown users</h3>
-<p>MarkdownPad supports multiple Markdown processing engines, including standard Markdown, Markdown Extra (with Table support) and GitHub Flavored Markdown.</p>
-<p>With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there's no limit to what you can do with MarkdownPad.</p>
+          <h2 id="markdown">Markdown语法</h2>
+
+<h3 id="section">标题</h3>
+
+<hr />
+
+<p>在行首插入1~6个 <code>#</code> 号，分别对应 1 至 6 级标题 :</p>
+
+<pre><code># 一级标题  #
+
+## 二级标题 ##
+
+### 三级标题 ###
+
+#### 四级标题 ####
+
+##### 五级标题 #####
+
+###### 六级标题 ######                
+</code></pre>
+
+<h3 id="section-1">强调</h3>
+
+<hr />
+
+<p>加粗：</p>
+
+<pre><code>**加粗** 
+</code></pre>
+
+<p>斜体（部分字体没有倾斜效果）：</p>
+
+<pre><code>*倾斜*
+</code></pre>
+
+<h3 id="section-2">链接</h3>
+
+<hr />
+
+<pre><code>[链接说明](http://example.com/)
+</code></pre>
+
+<h3 id="section-3">图片</h3>
+
+<hr />
+
+<pre><code>![图片说明](http://example.com/image.png)
+</code></pre>
+
+<h3 id="section-4">列表</h3>
+
+<hr />
+
+<p>有序列表:</p>
+
+<pre><code>1.  第一列
+1.  第二列
+1.  第三列
+</code></pre>
+
+<p>无序列表:</p>
+
+<pre><code>-   某列
+-   某列
+-   某列
+</code></pre>
+
+<p>可以混合使用有序列表和无序列表:</p>
+
+<pre><code>-   一级项
+    - 二级项
+-   一级项
+    1.  二级项1
+    2.  二级项2
+        - 三级项
+    3.  二级项3
+-   一级项
+</code></pre>
+
+<h3 id="section-5">语句引用</h3>
+
+<hr />
+
+<pre><code>&gt; 乔布斯说过：
+&gt; Stay hungry, stay foolish.
+
+&gt; &gt; 你也可以嵌套使用.
+
+&gt; #### 标题 也可出现在引用中
+&gt;
+&gt; - 当然列表也可以.
+&gt; - 是吧.
+</code></pre>
+
+<h3 id="section-6">代码</h3>
+
+<hr />
+
+<pre><code>单行代码：`&lt;code&gt;` .
+
+也可以有多行代码：
+```
+line1
+line2
+```
+</code></pre>
+
+<h3 id="section-7">缩进代码块</h3>
+
+<hr />
+
+<p>4个空格或者一个 tab 后面的文本都会被当做代码.</p>
+
+<pre><code>这是一个普通段落.
+
+    这是一段
+    代码.
+</code></pre>
+
+<h3 id="section-8">表格</h3>
+
+<hr />
+
+<p>一个简单的表格:</p>
+
+<pre><code>Heading | Heading | Heading
+------- | ------- | -------
+ Cell   |  Cell   |  Cell
+ Cell   |  Cell   |  Cell
+</code></pre>
+
+<p>如果你喜欢，也可以给表格加上外边界（效果和上面一样）:</p>
+
+<pre><code>| Heading | Heading | Heading |
+| ------- | ------- | ------- |
+|   Cell  |   Cell  |   Cell  |
+|   Cell  |   Cell  |   Cell  |
+</code></pre>
+
+<p>你可以控制表格里面元素的对其方式:</p>
+
+<pre><code>Heading | Heading | Heading
+ :----- | :----: | ------:
+ Left   | Center | Right
+ Left   | Center | Right
+</code></pre>
+
+<h3 id="section-9">删除线</h3>
+
+<hr />
+
+<pre><code>~~Strikethrough~~
+</code></pre>
+
+<h3 id="section-10">分割线</h3>
+
+<hr />
+
+<p>三种分割线:</p>
+
+<pre><code>---
+
+* * *
+
+- - - -
+</code></pre>
+
+<h3 id="section-11">手动换行</h3>
+
+<hr />
+
+<p>一行结束后加上连续两个空格才会换行，或者回车两下：</p>
+
+<pre><code>这是一行，后面有两个空格
+这才是新的一行.
+</code></pre>
 
          </div> 
  

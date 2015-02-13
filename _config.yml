@@ -1,4 +1,5 @@
 encoding: utf-8
-baseurl : http://www.lixiaoshenxian.com
+baseurl : http://lixiaoshenxian.com/
 permalink : /:categories/:title.html
 markdown: kramdown
+index_title: 李小神仙
