@@ -693,7 +693,7 @@ pre code {
 	padding: 0;
 	font-size: inherit;
 	color: inherit;
-	/*white-space: pre-wrap;*/
+	white-space: pre-wrap;
 	background-color: transparent;
 	border-radius: 0;
 }
@@ -4901,4 +4901,7 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 
 .clearfix:after,.container:after,.container-fluid:after,.row:after,.form-horizontal .form-group:after,.btn-toolbar:after,.btn-group-vertical>.btn-group:after,.nav:after,.navbar:after,.navbar-header:after,.navbar-collapse:after,.pager:after,.panel-body:after,.modal-footer:after {
 	clear: both;
+}
+.linenums ol{
+	padding: 0 0 0 30px;
 }
