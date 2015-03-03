@@ -5366,7 +5366,7 @@ html[xmlns] .slides {
 .page-detail blockquote {
 	margin: 18px 0 18px;
 	border: 1px dashed #CCC;
-	padding: 0 12px 8px 36px;
+	padding: 8px 12px 8px 36px;
 	background: #F4F5F7 url(blockquote.gif) 3px 3px no-repeat;
 }
 .page-detail blockquote p{
