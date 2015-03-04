@@ -59,6 +59,7 @@ function作用域里的变量 遮盖了上层作用域变量，声明又被提�
 >关于变量提升的问题都大同小异，在实际开发中要避免这个特性，把变量定义在顶部。就会避免出现不必要的问题。  
 
 在 Chrome 里有个奇怪的问题：
+
 	console.log(typeof name);
 	var name = "Chrome";
 	console.log(typeof name); 
