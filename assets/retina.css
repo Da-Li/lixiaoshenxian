@@ -6,7 +6,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	.navbar-shrink .logo {
-		background: url(../images/retina/logo-dark@2x.png) top left no-repeat;
+		background: url(logo-dark.png) top left no-repeat;
 		background-size: 100%;
 	}
 
