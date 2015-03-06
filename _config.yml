@@ -2,4 +2,5 @@ encoding: utf-8
 baseurl : http://www.lixiaoshenxian.com
 permalink : /:categories/:title.html
 markdown: kramdown
-index_title: 李小神仙
+index_title: 李小神仙 - be better
+author: 李小神仙
