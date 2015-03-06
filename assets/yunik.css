@@ -5375,3 +5375,15 @@ html[xmlns] .slides {
 	font-weight: 300;
 	line-height: 22.5px;
 }
+.title_logo:before{
+	color: #707070;
+	content: "<";
+	left: -2rem;
+	font-size:2rem;
+}
+.title_logo:after{
+	color:#707070;
+	content: "/>";
+	right: -3rem;
+	font-size:2rem;
+}
