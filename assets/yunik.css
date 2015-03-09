@@ -5366,7 +5366,7 @@ html[xmlns] .slides {
 .page-detail blockquote {
 	margin: 18px 0 18px;
 	border: 1px dashed #CCC;
-	padding: 8px 12px 8px 36px;
+	padding: 0 12px 8px 36px;
 	background: #F4F5F7 url(blockquote.gif) 3px 3px no-repeat;
 }
 .page-detail blockquote p{
@@ -5374,16 +5374,4 @@ html[xmlns] .slides {
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 22.5px;
-}
-.title_logo:before{
-	color: #707070;
-	content: "<";
-	left: -2rem;
-	font-size:2rem;
-}
-.title_logo:after{
-	color:#707070;
-	content: "/>";
-	right: -3rem;
-	font-size:2rem;
 }
