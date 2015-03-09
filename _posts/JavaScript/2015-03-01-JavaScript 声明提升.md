@@ -1,11 +1,12 @@
 ---
 layout: detail_tmp
-title: JavaScript中的坑
-intor: JavaScript中的坑-声明变量
+title: JavaScript 声明提升
+intor: JavaScript 声明提升(hoisting) 很容易忽略从而造成Bug
 categories: JavaScript
+keyword: JavaScript变量提升,JavaScript函数提升
 ---
 
-#JavaScript中的坑# 
+#JavaScript 变量提升# 
 
 
 --- 
@@ -66,4 +67,56 @@ function作用域里的变量 遮盖了上层作用域变量，声明又被提�
 
 经过上面示例，我们期待的结果是 `undefined` `string`. 但是结果却都是 `string`.如果我们再试一次，将`name`换成 其他的 `name2` 就是我们预期的结果了.原因是 
 **Chrome**
-可能初始化 `name` 导致我们使用时，已经声明完成，所以就是`string`了 
+可能初始化 `name` 导致我们使用时，已经声明完成，所以就是`string`了  
+
+----
+
+###2. 关于函数提升###
+
+	console.log(typeof foo);
+	console.log(typeof bar);
+	console.log(typeof add);
+	//函数的声明
+    function foo(){
+        alert('foo');
+    }
+    //命名函数表达式
+    var bar = function(){
+        alert('bar');
+    };
+    // 函数表达式-匿名函数
+    var add = function(a,b){
+    return a+b;
+	};
+
+结果是`function` `undefined` `undefined` 因为 `foo()`是根据`function`提升的。
+`foo()`被提升到了顶部且能正常运行，而bar()的定义并没有得到提升，
+仅有它的声明被提升，所以，当执行bar()的时候显示结果为undefined而不是作为函数来使用。
+
+----
+
+一个方法总结声明`提升`
+
+    var global = 'global';
+    function foo(){alert(global);}
+
+    function hoist(){
+        console.log(typeof foo);//function
+        console.log(typeof bar);//undefined
+        console.log(typeof global);//undefined
+
+        foo();//'undefined' global仅提升声明，并未提升初始化。
+        bar();//TypeError: 'undefined' is not a function  
+        var global = 'local';
+        //变量foo以及实现者被提升
+        function foo(){
+            console.log(global);
+        }
+
+        //仅变量bar被提升，函数实现部分 并未被提升
+        var bar = function(){
+            alert(global);
+        };
+    }
+
+    hoist(); 
