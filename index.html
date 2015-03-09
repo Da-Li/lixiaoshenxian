@@ -16,7 +16,12 @@ layout: index_t
 		<a class="des-button-dark des-button-dark-1d" href="{{ site.baseurl }}{{ post.url }}"  target="_blank"><span>Read post</span></a>
 		<div class="metas">
 		<div class="date">
-		<p><!-- <i class="fa fa-calendar"></i> -->{{post.date |date_to_long_string}}</p>
+		<p><!-- <i class="fa fa-calendar"></i> -->
+			    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+			    {% capture this_month %}{{ post.date | date: "%m" }}{% endcapture %}
+			    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+			    {% capture next_month %}{{ post.previous.date | date: "%m" }}{% endcapture %}
+			    {{ post.date | date: "%Y-%m-%d" }}</p>
 		</div>
 		<div class="comments">
 		<p><!-- <i class="fa fa-comments-o"></i> --></p>
